@@ -112,21 +112,9 @@
   <Flowchart sap:VirtualizedContainerService.HintSize="654,637" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Out" />
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Name="variable1">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Int32)" ExpressionText="new Dictionary(of string,Int32)" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="variable2">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:String)" ExpressionText="new Dictionary(of String,String)" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="scg:List(x:String)" Name="variable3">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new List(of String)" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Int32)" Default="[new Dictionary(of string,Int32)]" Name="variable1" />
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[new Dictionary(of String,String)]" Name="variable2" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(of String)]" Name="variable3" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -622,6 +610,21 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:SetTransactionStatus>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">260,527.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,25</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:WriteCellX Cell="{x:Null}" Value="{x:Null}" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="WriteCellX_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ueab:WriteCellX>
     </FlowStep>
   </Flowchart>
 </Activity>
