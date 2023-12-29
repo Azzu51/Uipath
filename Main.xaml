@@ -626,5 +626,35 @@
         </sap:WorkflowViewStateService.ViewState>
       </ueab:WriteCellX>
     </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">0,387.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,45</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:FileChangeTriggerV3 FileNameFilter="{x:Null}" IncludeSubdirectories="{x:Null}" Path="{x:Null}" ChangeType="Changed" DisplayName="File Change Trigger" Enabled="True" sap:VirtualizedContainerService.HintSize="200,45" sap2010:WorkflowViewState.IdRef="FileChangeTriggerV3_1" NotifyFilters="FileName" SchedulingMode="Sequential" TriggerId="f6a1945d-ea6c-48ce-a182-f5f8dbf1a9a4">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:FileChangeTriggerV3>
+    </FlowStep>
+    <FlowStep>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">0,527.5</av:Point>
+          <av:Size x:Key="ShapeSize">200,25</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ueab:WriteCellX Cell="{x:Null}" Value="{x:Null}" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="WriteCellX_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ueab:WriteCellX>
+    </FlowStep>
   </Flowchart>
 </Activity>
